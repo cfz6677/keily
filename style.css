@@ -1,0 +1,125 @@
+body {
+  margin: 10px;
+  font-family: Arial, Arial, Helvetica, sans-serif;
+}
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  color: blue;
+  font-family: cursive;
+}
+.container {
+  display: grid;
+  grid-template-rows: repeat (4, 30fr);
+  grid-template-columns: repeat (3, 30fr);
+  grid-gap: 10px;
+  grid-template-areas:
+    "pic-one pic-two pic-two"
+    "pic-four pic-two pic-two"
+    "pic-seven pic-eight pic-nine"
+    "pic-ten pic-eleven pic-twelve";
+}
+
+.container-two {
+  display: flex;
+  flex-direction: row;
+  background-color: blue;
+  justify-content: center;
+}
+
+.about {
+  color: white;
+  background-color: blue;
+  padding: 10px;
+  margin-right: 35px;
+}
+
+.contact {
+  color: white;
+  background-color: blue;
+  padding: 10px;
+  margin-left: 35px;
+}
+
+.img-one {
+  grid-area: pic-one;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: grey 5px 5px;
+}
+.img-two {
+  width: 100%;
+  height: 100%;
+  grid-area: pic-two;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: grey 5px 5px;
+}
+.img-three {
+  grid-area: pic-four;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: grey 5px 5px;
+}
+.img-four {
+  grid-area: pic-seven;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: grey 5px 5px;
+}
+.img-five {
+  grid-area: pic-eight;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: grey 5px 5px;
+}
+.img-six {
+  grid-area: pic-nine;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: grey 5px 5px;
+}
+.img-seven {
+  grid-area: pic-ten;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: grey 5px 5px;
+}
+.img-eight {
+  grid-area: pic-eleven;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: grey 5px 5px;
+}
+.img-nine {
+  grid-area: pic-twelve;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: grey 5px 5px;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    display: grid;
+    grid-template-rows: repeat (6, 30fr);
+    grid-template-columns: repeat (2, 30fr);
+    grid-gap: 10px;
+    grid-template-areas:
+      "pic-one pic-two"
+      "pic-three pic-two"
+      "pic-five pic-six"
+      "pic-seven pic-eight"
+      "pic-nine pic-ten"
+      "pic-elen pic-twelve";
+  }
+}
